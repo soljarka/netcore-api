@@ -62,7 +62,7 @@ namespace netcore_api
             }
 
             app.UseCors(builder =>
-                builder.WithOrigins("*"));
+                builder.AllowAnyHeader().AllowAnyOrigin().AllowAnyMethod());
 
             app.UseHttpsRedirection();
             app.UseAuthentication();

@@ -24,11 +24,7 @@ namespace netcore_api
 
             var host = WebHost.CreateDefaultBuilder()
                 .UseKestrel(options =>
-                    options.Listen(IPAddress.Any, port, listenOptions =>
-                    {
-                        listenOptions.UseHttps("certificate.pfx", "mrgapass");
-                    }
-                    )
+                    options.Listen(IPAddress.Any, port)
                 )
                 .UseContentRoot(Directory.GetCurrentDirectory())
                 .UseIISIntegration()

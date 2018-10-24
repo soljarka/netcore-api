@@ -17,7 +17,7 @@ namespace netcore_api.Controllers
     {
         private string beerApi = "https://go-for-beer.azurewebsites.net/secured/beers";
         private string amazonBeerApi = "https://go-for-beer.azurewebsites.net/secured/amazon-beers";
-        private string carsApi = "https://oauth2-server.ac-np.swissre.com/cars";
+        private string carsApi = "https://api-np.group.swissre.com/pccc-train/gw/cars/cars";
         private string userApi = "https://go-for-beer.azurewebsites.net/user";
 
         // GET api/values
@@ -150,7 +150,7 @@ namespace netcore_api.Controllers
                 }
                 catch (Exception ex)
                 {
-                    return ex.ToString();
+                    return "Cars endpoint error: " + ex.ToString();
                 }
             }
         }

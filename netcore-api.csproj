@@ -13,10 +13,4 @@
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="2.1.2" />
   </ItemGroup>
 
-  <ItemGroup>
-    <None Update="certificate.pfx">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </None>
-  </ItemGroup>
-
 </Project>
